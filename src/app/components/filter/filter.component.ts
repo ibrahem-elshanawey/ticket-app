@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-filter',
@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class FilterComponent {
   isChecked: boolean = true;
+  @Output() sortTicketNumber = new EventEmitter<void>();
+
+ 
 }

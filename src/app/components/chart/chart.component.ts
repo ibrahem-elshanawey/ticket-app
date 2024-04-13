@@ -69,7 +69,7 @@ export class ApexChartComponent {
         align: "right",
       },
       subtitle: {
-        text: "05 يوليو , 2023 - 05 أغسطس , 2023",
+        text: "   يوليو , 2023 - 05 أغسطس , 2023 ",
         align: "right"
       },
       // labels: series.monthDataSeries1.dates,
@@ -85,7 +85,6 @@ export class ApexChartComponent {
       legend: {
         horizontalAlign: "left"
       },
-
     };
   }
 }

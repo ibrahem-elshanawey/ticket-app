@@ -1,0 +1,26 @@
+.english {
+  direction: ltr;
+}
+
+:host ::ng-deep .img-user {
+  margin-right: 10px !important;
+  margin-left: 0px !important;
+}
+
+:host ::ng-deep .img-ticket {
+  margin-right: 10px !important;
+  margin-left: 0px !important;
+}
+
+:host ::ng-deep .search-input {
+  position: relative;
+  margin-left: 10px;
+  margin-right: 0px !important;
+}
+:host ::ng-deep .ticket h3 i {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}

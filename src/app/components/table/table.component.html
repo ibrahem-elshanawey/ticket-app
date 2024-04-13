@@ -6,39 +6,47 @@
         <th>#</th>
         <th>المستخدم</th>
         <th>رقم التذكرة</th>
-        <th>قيمى التذكرة <p-sortIcon field="code"></p-sortIcon></th>
+        <th>قيمة التذكرة <p-sortIcon field="code"></p-sortIcon></th>
         <th>السينمات</th>
         <th>عدد الأشخاص</th>
         <th>عدد مرات الشراء</th>
         <th>التذكرة</th>
       </tr>
     </ng-template>
-    <ng-template pTemplate="body" let-product>
+    <ng-template pTemplate="body" let-user>
       <tr>
-        <td>{{ product.id }}</td>
+        <td>{{ user.id }}</td>
         <td>
           <div class="contanier-user">
             <div class="img-user">
-              <img [src]="product.image" alt="">
+              <img [src]="user.image" alt="">
             </div>
             <div class="parent-text">
-              <div class="user-name">{{ product.name }}</div>
-              <div class="user-telephone">{{product.telephonenumber}}</div>
+              <div class="user-name">{{ user.name }}</div>
+              <div class="user-telephone">{{user.telephonenumber}}</div>
             </div>
           </div>
 
         </td>
         <td>
-          <div class="user-code">{{ product.code }}</div>
+          <div class="user-code">{{ user.code }}</div>
         </td>
         <td>
-          <div class="user-code">{{ product.price}}$</div>
+          <div class="user-code">{{ user.price}}$</div>
         </td>
-        <td>{{ product.description }}</td>
+        <td><button class="user-description" pButton [pTooltip]="tooltipContent" tooltipPosition="top">{{
+            user.description }}
+          </button>
+          <ng-template #tooltipContent>
+            <div class="flex align-items-center">
+              <span>صيدناوي مول , برج العرب</span>
+            </div>
+          </ng-template>
+        </td>
         <td>
-          <div class="user-code">{{ product.peoplenumber }}</div>
+          <div class="user-code">{{ user.peoplenumber }}</div>
         </td>
-        <td>{{ product.numberpurchase }}</td>
+        <td>{{ user.numberpurchase }}</td>
         <td>
           <div class="container-ticket">
             <div class="img-ticket">

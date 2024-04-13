@@ -15,7 +15,7 @@
 .card::before {
   content: "";
   position: absolute;
-  top: 46%;
+  top: 45%;
   right: -16px;
   width: 40px;
   height: 30px;
@@ -33,7 +33,7 @@
 .card::after {
   content: "";
   position: absolute;
-  top: 46%;
+  top: 45%;
   left: -16px;
   width: 40px;
   height: 30px;
@@ -112,6 +112,8 @@
   cursor: pointer;
   background: transparent;
   position: relative;
+  padding: 6px;
+  padding-block: 10px;
 }
 
 .tooltip {

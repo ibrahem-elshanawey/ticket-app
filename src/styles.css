@@ -94,7 +94,11 @@ body {
 .p-paginator .p-dropdown {
   margin-left: 4.5rem;
   margin-right: 2.5rem;
-  height: 3rem;
+  height: 2.5rem;
+}
+
+.p-inputtext {
+  padding: 0.5rem 0.75rem;
 }
 
 .p-paginator .p-dropdown::before {
@@ -108,6 +112,7 @@ body {
   font-size: 12px;
   color: #333333;
 }
+
 .p-paginator .p-dropdown::after {
   content: 'من اصل 250';
   position: absolute;
@@ -118,4 +123,10 @@ body {
   font-family: 'Neo-Sans-Arabic-Regular', sans-serif !important;
   font-size: 12px;
   color: #333333;
+}
+/*----responsive----*/
+@media only screen and (max-width:567px) {
+  .p-paginator {
+    justify-content: center;
+  }
 }
