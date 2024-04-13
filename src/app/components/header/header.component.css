@@ -1,0 +1,79 @@
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px auto;
+  margin-bottom: 0px;
+}
+/*----ticket number----*/
+.ticket h3 {
+  font-family: 'Neo-Sans-Arabic-Bold', sans-serif;
+  font-size: 16px;
+}
+
+.ticket h3 i {
+  height: 34px;
+  width: 34px;
+  background: #e6eaed;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+
+.ticket h3 i:hover {
+  background: #8a74f9;
+  color: #F9F9F9 !important;
+}
+/*----edit button----*/
+.edit button {
+  font-family: 'Neo-Sans-Arabic-Medium', sans-serif;
+  font-size: 14px;
+  background: #F9F9F9;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: 1px solid #E9EAEA;
+  height: 34px;
+  width: 78px;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+
+.edit button:hover {
+  background: #8a74f9;
+  color: #F9F9F9 !important;
+}
+
+.edit button i {
+  cursor: pointer;
+  color: #8a74f9;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+
+.edit button:hover i {
+  color: #F9F9F9;
+
+}
+
+

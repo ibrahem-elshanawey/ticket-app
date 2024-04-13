@@ -1,0 +1,19 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div id="chart">
+  <div class="parent-dorp-list">
+    <div class="drop-list">
+      <select class="styled-select" id="selectDropdown">
+        <option value="option1">سنويا</option>
+        <option value="option2">شهريا</option>
+        <option value="option3">اسبوعيا</option>
+      </select>
+      <i class="fa-solid fa-angle-down"></i>
+    </div>
+  </div>
+
+  <apx-chart [series]="chartOptions.series!" [chart]="chartOptions.chart!" [xaxis]="chartOptions.xaxis!"
+    [stroke]="chartOptions.stroke!" [dataLabels]="chartOptions.dataLabels!" [yaxis]="chartOptions.yaxis!"
+    [labels]="chartOptions.labels!" [legend]="chartOptions.legend!" [title]="chartOptions.title!"
+    [subtitle]="chartOptions.subtitle!">
+  </apx-chart>
+</div>

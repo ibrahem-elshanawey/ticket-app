@@ -1,0 +1,53 @@
+<div class="card">
+  <div class="card-background"></div>
+  <div class="card-ticket-body">
+    <div class="title">
+      <h2 class="card-title">
+
+          عرض التذكرة الخاصة بالفيلم
+
+        <button type="button" class="remove" pButton [pTooltip]="tooltipContent" tooltipPosition="bottom">
+          <i class="fa-regular fa-trash-can"></i>
+        </button>
+        <ng-template #tooltipContent>
+          <div class="flex align-items-center">
+            <span>حذف </span>
+          </div>
+        </ng-template>
+      </h2>
+    </div>
+    <div class="card-content">
+      <div class="card-copy">
+        <div class="copy" #copyText>
+          <h3>www.tazkty.com/473847</h3>
+        </div>
+        <p-toast></p-toast>
+        <button class="copy-link" pButton pRipple (click)="copyTextToClipboard(copyText.innerText)">
+          <i class="fa-regular fa-copy" style="color: #8A74F9;"></i>
+        </button>
+      </div>
+      <div class="date-end">
+        <h3>فعال حتي 15 يوليو 2023</h3>
+
+      </div>
+
+      <div class="dotted-line"></div>
+      <div class="card-details">
+        <div class="share">
+          <div class="disc">
+            <p>خصم</p>
+            <p class="dicount">25%</p>
+          </div>
+          <div class="share-btn">
+            <button type="button">
+              <i class="fa-regular fa-paper-plane"></i>
+              مشاركة
+            </button>
+          </div>
+        </div>
+        <qrcode [qrdata]="'Your data string'" [width]="82" [errorCorrectionLevel]="'M'"></qrcode>
+      </div>
+    </div>
+  </div>
+
+</div>

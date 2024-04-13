@@ -1,0 +1,72 @@
+<div class="card">
+  <p-table [value]="User" [tableStyle]="{ 'min-width': '100%' }" [paginator]="true" [rows]="5"
+    [rowsPerPageOptions]="[5, 10, 20]">
+    <ng-template pTemplate="header">
+      <tr>
+        <th>#</th>
+        <th>المستخدم</th>
+        <th>رقم التذكرة</th>
+        <th>قيمى التذكرة <p-sortIcon field="code"></p-sortIcon></th>
+        <th>السينمات</th>
+        <th>عدد الأشخاص</th>
+        <th>عدد مرات الشراء</th>
+        <th>التذكرة</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-product>
+      <tr>
+        <td>{{ product.id }}</td>
+        <td>
+          <div class="contanier-user">
+            <div class="img-user">
+              <img [src]="product.image" alt="">
+            </div>
+            <div class="parent-text">
+              <div class="user-name">{{ product.name }}</div>
+              <div class="user-telephone">{{product.telephonenumber}}</div>
+            </div>
+          </div>
+
+        </td>
+        <td>
+          <div class="user-code">{{ product.code }}</div>
+        </td>
+        <td>
+          <div class="user-code">{{ product.price}}$</div>
+        </td>
+        <td>{{ product.description }}</td>
+        <td>
+          <div class="user-code">{{ product.peoplenumber }}</div>
+        </td>
+        <td>{{ product.numberpurchase }}</td>
+        <td>
+          <div class="container-ticket">
+            <div class="img-ticket">
+              <img src="../../../assets/Images/Frame 10.svg" alt="Frame 10.svg">
+            </div>
+            <div class="text-ticket">
+              <div class="text-ticket-one">
+                تذكرة رقم 45.pdf
+              </div>
+              <div class="text-ticket-two">
+                9mb
+                .
+                PDF
+              </div>
+            </div>
+            <button class="download-button" pButton [pTooltip]="tooltipContents" tooltipPosition="bottom">
+              <img src="../../../assets/Images/Group 1000010390.svg" alt="Group 1000010390.svg">
+            </button>
+            <ng-template #tooltipContents>
+              <div class="flex align-items-center">
+                <span>تحميل</span>
+              </div>
+            </ng-template>
+          </div>
+        </td>
+      </tr>
+    </ng-template>
+  </p-table>
+
+
+</div>
